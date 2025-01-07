@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&family=Rajdhani:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Romanesco&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Alex Brush', cursive;
+font-family: 'Rajdhani', sans-serif; */
+*{
+    box-sizing: border-box;
+    margin: 0rem;
+    padding: 0rem;
+}
+body{
+    font-family: 'Poppins', sans-serif ; 
+}
+.container-fluid{
+    padding: 1rem;
+}
+.hoverstyling {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%); /* Start off-screen from the bottom */
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.card-col:hover .hoverstyling {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Start off-screen from the bottom */
+}
+/* ======================================== NAVBAR ============================================== */
+.navres{
+    display: none;
+}
+.css-j400xw-MuiPaper-root-MuiDrawer-paper{
+    width: 60% !important;
+    background-color :#F9F1E7 !important;
+}
+/* ======================================== NAVBAR ============================================== */
+/* ======================================== Pagination ============================================== */
+
+/* ======================================== Pagination ============================================== */
