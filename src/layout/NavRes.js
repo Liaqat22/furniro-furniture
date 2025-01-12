@@ -10,14 +10,14 @@ const location = useLocation()
     const tabs = [
         { title: "home", url: "/", icon: "fa-solid fa-house" },
         { title: "shop", url: "/shop", icon: "fa-solid fa-shop" },
-        { title: "about",url: "*pagenotfound", icon: "fa-solid fa-circle-info" },
+        { title: "about",url: "/about", icon: "fa-solid fa-circle-info" },
         { title: "contact",url: "/contact", icon: "fa-solid fa-envelope" }
     ];
 
     const icons = [
-        {url: "/login", title: "user", icon: "fa-solid fa-user" },
-        {url: "/search*", title: "search", icon: "fa-solid fa-magnifying-glass" },  // Search icon
-        {url: "/likes", title: "likes", icon: "fa-solid fa-heart" },
+        {url: " ", title: "user", icon: "fa-solid fa-user" },
+        {url: " ", title: "search", icon: "fa-solid fa-magnifying-glass" },  // Search icon
+        {url: " ", title: "likes", icon: "fa-solid fa-heart" },
         {url: "/cart", title: "cart", icon: "fa-solid fa-cart-shopping" }  // Shopping cart icon
     ];
     

@@ -1,30 +1,17 @@
 import {  Card, CardContent, CardMedia, Grid2, Typography } from '@mui/material'
-import axios from 'axios'
-import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
+import { allProducts } from '../productdata/data'
 
 function OurProducts() {
-    const [source, setSource] = useState([])
-    const handleApi = async () => {
-        try {
-            const { data } = await axios.get('https://dummyjson.com/products')
-            setSource(data?.products)
-        } catch (error) {
-            console.log(error, "error")
-        }
-
-    }
-    useEffect(() => {
-        handleApi()
-    },[])
+    
   return (
 <>
 <div className='text-center flex flex-col gap-4'>
     <Typography variant='h4' className='text-center !font-black capitalize'>our Products</Typography>
 </div>
-<div className='container'>
+<div className='container-fluid !px-10'>
 <Grid2 container spacing={2} columns={12}>
-    {source?.slice(0, 4).map((p) => (
+    {allProducts?.slice(0, 4).map((p) => (
         <Grid2 size={{ xs: 12, sm: 6, md: 4, lg: 3 }} className=' mt-3 !cursor-pointer' key={p?.id}>
 
             <div className='relative overflow-hidden card-col'>
@@ -48,22 +35,31 @@ function OurProducts() {
                 </NavLink>
                 <Card className='  relative'>
                     <div className='absolute inset-0 flex justify-end p-3'>
-                        <div className=' bg-[#2EC1AC] rounded-full  flex justify-center w-[50px] h-[50px]  items-center'>
-                            <p className='text-white mb-0'>New</p>
+                        {p.discountPercentage && <>
+                            <div className={` bg-[#E97171] rounded-full  flex justify-center w-[50px] h-[50px]  items-center`}>
+                            <p className='text-white mb-0'>-{p.discountPercentage}%</p>
                         </div>
+                        </>}
+                        {p.new && <>
+                            <div className={` bg-[#2EC1AC] rounded-full  flex justify-center w-[50px] h-[50px]  items-center`}>
+                            <p className='text-white mb-0'>{p.new}</p>
+                        </div>
+                        </>}
+                       
                     </div>
                     <CardMedia
                         component="img"
-                        height="140"
-                        image={p?.thumbnail}
+                        // height="140"
+                        className='!object-cover !h-[18rem] !w-[100%]'
+                        image={p?.img_link}
                         alt="Thumbnail"
                         loading="lazy" />
-                    <CardContent className='bg-[#F4F5F7] '>
-                        <p className='text-[#3A3A3A] text-[1.2rem] font-semibold'>{p?.title?.substring(0, 20)}.</p>
-                        <p className='text-[#898989]'>{p?.category}</p>
+                      <CardContent className='bg-[#F4F5F7] flex flex-col gap-2'>
+                        <p className='text-[#3A3A3A] text-xl font-bold mb-0'>{p?.name?.substring(0, 20)}.</p>
+                        <p className='text-[#898989] mb-0 font-semibold'>{p?.type}</p>
                         <div className='flex flex-row justify-between items-center'>
-                            <p className='text-sm font-semibold'>Rp 2.500.000</p>
-                            <p className='text-[#898989] text-sm'>Rp 3.500.000</p>
+                            <p className='text-xl font-bold mb-0'>Rp {p?.price}</p>
+                          {p.discountPercentage && <p className='text-[#898989]  mb-0'><del> Rp {p?.discountedPrice}</del></p>}
                         </div>
                     </CardContent>
                 </Card>

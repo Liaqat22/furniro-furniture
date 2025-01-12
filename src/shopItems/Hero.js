@@ -17,7 +17,7 @@ function Hero() {
                     <h1 className='capitalize text-4xl text-center '>shop</h1>
                     <Breadcrumbs aria-label="breadcrumb">
                         <NavLink className="no-underline capitalize text-lg text-textblack font-semibold" to="/"> home </NavLink>
-                        <NavLink className="no-underline capitalize text-textblack font-medium " to="/"> shop </NavLink>
+                        <NavLink className="no-underline capitalize text-textblack font-medium " to="/shop"> shop </NavLink>
                     </Breadcrumbs>
                 </div>
             </div>

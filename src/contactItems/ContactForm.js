@@ -17,7 +17,7 @@ function ContactForm() {
     return (
         <>
             <div className='flex flex-col gap-8 justify-center'>
-                <div className='flex flex-col gap-2 container-fluid'>
+                <div className='flex flex-col gap-3 container-fluid'>
                     <h1 className='font-bold capitalize text-textblack text-3xl text-center'>
                         Get In Touch With Us
                     </h1>

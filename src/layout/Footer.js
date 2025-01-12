@@ -28,7 +28,7 @@ function Footer() {
 
         </Grid2>
 
-        <Grid2 size={{ xs: 6, md: 2 }} mt={3}>
+        <Grid2 size={{ xs: 5, md: 2 }} mt={3}>
           <div className='flex flex-col gap-4'>
             <h1 className='capitalize text-graytext font-semibold text-[1rem]'>links</h1>
             <ul className='p-0 m-0 flex flex-col gap-4   '>
@@ -40,7 +40,7 @@ function Footer() {
             </ul>
           </div>
         </Grid2>
-        <Grid2 size={{ xs: 6, md: 2 }} mt={3}>
+        <Grid2 size={{ xs: 7, md: 2 }} mt={3}>
           <div className='flex flex-col gap-4'>
             <h1 className='capitalize text-graytext font-semibold text-[1rem]'>help</h1>
             <ul className='p-0 m-0 flex flex-col gap-4   '>

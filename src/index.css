@@ -14,7 +14,7 @@ font-family: 'Rajdhani', sans-serif; */
     padding: 0rem;
 }
 body{
-    font-family: 'Poppins', sans-serif ; 
+    font-family: 'Poppins', sans-serif !important; 
 }
 .container-fluid{
     padding: 1rem;
@@ -40,6 +40,10 @@ body{
     background-color :#F9F1E7 !important;
 }
 /* ======================================== NAVBAR ============================================== */
-/* ======================================== Pagination ============================================== */
+/* ======================================== Billing detail ============================================== */
+.css-1xihjvk-MuiButtonBase-root-MuiMenuItem-root.Mui-selected{
+    background-color: rgb(184 142 47) !important;
+  color: white !important ;
+}
+/* ======================================== Billing detail ============================================== */
 
-/* ======================================== Pagination ============================================== */

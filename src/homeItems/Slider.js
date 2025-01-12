@@ -5,9 +5,9 @@ function Slider() {
 
     const images = [
         "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1735838475/Rectangle_25_t0tllc.png",
+        "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1736617445/Rectangle_26_xdnqoh.png",
         "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1735838475/Rectangle_25_t0tllc.png",
-        "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1735838475/Rectangle_25_t0tllc.png",
-        "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1735838475/Rectangle_25_t0tllc.png",
+        "https://res.cloudinary.com/dc1vhqmg2/image/upload/v1736617445/Rectangle_26_xdnqoh.png",
     ];
 
     const next = () => {

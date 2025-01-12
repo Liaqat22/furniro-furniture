@@ -13,7 +13,7 @@ function SizeColors() {
                         {["l", "xl", "xs"].map((page) => (
                             <button
                                 key={page}
-                                className={` pagination min-w-12 min-h-10 ${page === "l" ? "active" : " "}  current:bg-lightgoldbg current:text-white
+                                className={` pagination min-w-12 min-h-10 ${page === "l" && "active" }  current:bg-lightgoldbg current:text-white
 bg-bgpink rounded-lg flex justify-center items-center !px-4 !py-2 no-underline text-textblack uppercase`}
                             >
                                 {page}

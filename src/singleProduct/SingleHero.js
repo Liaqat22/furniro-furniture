@@ -14,12 +14,12 @@ function SingleHero() {
         <div>
             <section className='  !py-6 bg-bgpink'>
                 <div className='flex gap-6 items-center container'>
-                    <Breadcrumbs aria-label="breadcrumb">
-                        <NavLink className="no-underline capitalize text-lg text-graytext font-semibold" to="/"> home </NavLink>
+                    <Breadcrumbs aria-label="breadcrumb" className="flex !flex-nowrap">
+                        <NavLink className="no-underline capitalize text-[1.1rem] text-graytext font-semibold" to="/"> home </NavLink>
                         <NavLink className="no-underline capitalize text-graytext font-medium " to="/"> shop </NavLink>
                     </Breadcrumbs>
                     <div class="w-[2px] h-8 bg-gray-400"></div>
-                    <p className='text-textblack mb-0 capitalize font-medium'>Asgaard sofa</p>
+                    <p className='text-textblack mb-0 capitalize font-medium whitespace-nowrap'>Asgaard sofa</p>
                 </div>
             </section>
             <div className='container'>
