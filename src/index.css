@@ -35,9 +35,14 @@ body{
 .navres{
     display: none;
 }
-.css-j400xw-MuiPaper-root-MuiDrawer-paper{
+/* .css-j400xw-MuiPaper-root-MuiDrawer-paper{
     width: 60% !important;
     background-color :#F9F1E7 !important;
+} */
+.MuiDrawer-paper {
+  width: 65% !important;
+ background-color :#F9F1E7 !important;
+
 }
 /* ======================================== NAVBAR ============================================== */
 /* ======================================== Billing detail ============================================== */
