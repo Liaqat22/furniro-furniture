@@ -69,7 +69,7 @@ function CartItems() {
                             </section>
 
                             <section className='flex justify-center'>
-                                <NavLink to="/checkout" className='no-underline text-textblack text-lg font-semibold flex justify-around capitalize items-center border-black border rounded-xl lg:w-60  py-3 h-auto sx:w-40'>
+                                <NavLink to="#" className='no-underline text-textblack text-lg font-semibold flex justify-around capitalize items-center border-black border rounded-xl lg:w-60  py-3 h-auto sx:w-40'>
                                     check out
                                 </NavLink>
                             </section>
