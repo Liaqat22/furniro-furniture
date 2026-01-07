@@ -76,8 +76,8 @@ function BillingDetails({ data, setdata }) {
                         {countries?.sort((a, b) => a?.name?.common?.localeCompare(b?.name?.common))
 .map((country) => (
                             <MenuItem
-                                key={country.cca2}
-                                value={country.name.common}
+                                key={country?.cca2}
+                                value={country?.name?.common}
                                 className="cursor-pointer font-medium hover:!bg-lightgoldbg hover:text-white current:!text-white duration-100 px-4 py-3 "
                             >
                                 {country?.name?.common}
