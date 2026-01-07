@@ -60,32 +60,30 @@ function BillingDetails({ data, setdata }) {
 
                 <div className='flex flex-col gap-2' >
                     <label className='capitalize text-textblack font-medium'>country / region</label>
-                               <input type='text'
-                        className='border border-gray-600 h-[3.5rem] rounded-lg px-3' />
-//                     <Select
-//                         name="country"
-//                         value={data?.country}
-//                         onChange={handleChange}
-//                         className="border border-gray-600 h-[3.5rem] rounded-lg px-3  "
-//                         required
-//                     >
-//                         {/* Placeholder */}
-//                         <MenuItem value="" disabled className='!bg-transparent'>
-//                             Select a country
-//                         </MenuItem>
+                    <Select
+                        name="country"
+                        value={data?.country}
+                        onChange={handleChange}
+                        className="border border-gray-600 h-[3.5rem] rounded-lg px-3  "
+                        required
+                    >
+                        {/* Placeholder */}
+                        <MenuItem value="" disabled className='!bg-transparent'>
+                            Select a country
+                        </MenuItem>
 
-//                         {/* Map countries to MenuItem */}
-//                         {countries?.sort((a, b) => a?.name?.common?.localeCompare(b?.name?.common))
-// .map((country) => (
-//                             <MenuItem
-//                                 key={country?.cca2}
-//                                 value={country?.name?.common}
-//                                 className="cursor-pointer font-medium hover:!bg-lightgoldbg hover:text-white current:!text-white duration-100 px-4 py-3 "
-//                             >
-//                                 {country?.name?.common}
-//                             </MenuItem>
-//                         ))}
-//                     </Select>
+                        {/* Map countries to MenuItem */}
+                        {countries?.sort((a, b) => a?.name?.common?.localeCompare(b?.name?.common))
+.map((country) => (
+                            <MenuItem
+                                key={country?.cca2}
+                                value={country?.name?.common}
+                                className="cursor-pointer font-medium hover:!bg-lightgoldbg hover:text-white current:!text-white duration-100 px-4 py-3 "
+                            >
+                                {country?.name?.common}
+                            </MenuItem>
+                        ))}
+                    </Select>
 
                 </div>
                 <div className='flex flex-col gap-2' >
