@@ -34,7 +34,7 @@ function BillingDetails({ data, setdata }) {
                                 <label className='capitalize text-textblack font-medium'>first name</label>
                                 <input type='text' required
                                     // name="firstname"
-                                    value={data.firstname}
+                                    value={data?.firstname}
                                     onChange={(e) => setdata({ ...data, firstname: e.target.value })} className='border border-gray-600 leading-[3.5rem] rounded-lg px-3' />
                             </div>
                         </Grid2>
@@ -43,7 +43,7 @@ function BillingDetails({ data, setdata }) {
                                 <label className='capitalize text-textblack font-medium'>last name</label>
                                 <input type='text' required
                                     name="lastname"
-                                    value={data.lastname}
+                                    value={data?.lastname}
                                     onChange={handleChange}
                                     className='border border-gray-600 h-[3.5rem] rounded-lg px-3' />
                             </div>
@@ -62,7 +62,7 @@ function BillingDetails({ data, setdata }) {
                     <label className='capitalize text-textblack font-medium'>country / region</label>
                     <Select
                         name="country"
-                        value={data.country}
+                        value={data?.country}
                         onChange={handleChange}
                         className="border border-gray-600 h-[3.5rem] rounded-lg px-3  "
                         required
@@ -73,14 +73,14 @@ function BillingDetails({ data, setdata }) {
                         </MenuItem>
 
                         {/* Map countries to MenuItem */}
-                        {countries.sort((a, b) => a.name.common.localeCompare(b.name.common))
+                        {countries?.sort((a, b) => a?.name?.common?.localeCompare(b?.name?.common))
 .map((country) => (
                             <MenuItem
                                 key={country.cca2}
                                 value={country.name.common}
                                 className="cursor-pointer font-medium hover:!bg-lightgoldbg hover:text-white current:!text-white duration-100 px-4 py-3 "
                             >
-                                {country.name.common}
+                                {country?.name?.common}
                             </MenuItem>
                         ))}
                     </Select>
