@@ -13,14 +13,14 @@ function Services() {
     <>
     <div className='bg-bgpink min-h-40 flex flex-col justify-center p-8'>
         <Grid2 container spacing={2} columns={12} >
-            {data.map((d , i)=>(
+            {data?.map((d , i)=>(
 
         <Grid2 size = {{sx:12 ,sm:6,md:3}}  key={i} mt={2} mb={2}>
             <div className='flex justify-center items-center gap-4 '>
-            <i className={`${d.icon} text-4xl`}/>
+            <i className={`${d?.icon} text-4xl`}/>
             <div className='text'>
-                <p className='mb-0 text-xl text-textblack font-bold '>{d.primary}</p>
-                <p className='mb-0 text-sm text-graytext'>{d.secondary}</p>
+                <p className='mb-0 text-xl text-textblack font-bold '>{d?.primary}</p>
+                <p className='mb-0 text-sm text-graytext'>{d?.secondary}</p>
             </div>
             </div>
         </Grid2>
