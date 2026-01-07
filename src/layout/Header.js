@@ -9,7 +9,7 @@ function Header() {
     { title: "shop", url: "/shop" },
     { title: "about", url: "/about" },
     { title: "contact", url: "/contact" },
-    { title: "services", url: "/services" },
+    // { title: "services", url: "/services" },
   ]
   const icons = [
     { url: " ", title: "user", icon: "fa-solid fa-user" },
