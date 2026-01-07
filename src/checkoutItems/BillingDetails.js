@@ -8,7 +8,7 @@ function BillingDetails({ data, setdata }) {
         const fetchCountries = async () => {
             try {
                 const response = await fetch('https://restcountries.com/v3.1/all');
-                const data = await response.json();
+                const data = await response?.json();
                 setCountries(data);
             } catch (error) {
                 console.error('Error fetching country data:', error);
